@@ -28,6 +28,7 @@ class AFLink:
         self.dataset = dataset    # 数据集类
         self.path_out = path_out  # 结果保存路径
         self.track = np.genfromtxt(path_in, delimiter=' ')
+        print(self.track)
         self.model.cuda()
         self.model.eval()
 
